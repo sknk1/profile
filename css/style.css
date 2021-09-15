@@ -1,0 +1,329 @@
+/* xs: phone - portrait */
+/* default. no media */
+:root{
+  --color1 : #e86148;
+  --color2: #ffbc4f;
+  --color3: #ff8f5c;
+}
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* CLASS STYLE */
+.center{
+  text-align: center !important;
+}
+
+.header{
+  background-color: white;
+  position: fixed;
+  top:0%;
+  height: auto;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* HELLO STYLE */
+.header-menu-list{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-menu-list li{
+  /* color: black; */
+  display: block;
+  float: left;
+  padding: 2%;
+  text-align: center;
+}
+
+.header-menu-list li a{
+  text-decoration: none;
+  color: black;
+}
+
+.header-menu-list li a:hover{
+  color: var(--color1);
+}
+
+.hello-page-background{
+  margin: 113.5px 0 0 0;
+  padding: 60px 0;
+  background-color: var(--color1);
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello-page-section{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hello-left-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hello-right-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hello-page-image{
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.hello-page-image img{
+  position: absolute;
+  width: 280px;
+  top: 0%;
+  left: 3%;
+  z-index: 11;
+}
+
+.hello-page-text{
+  color: white;
+  width: auto;
+  height: auto;
+  left: 55%;
+  top: 38%;
+}
+
+.header-text{
+  font-family: 'Archivo Black', sans-serif;
+  display: block;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 10px 0px;
+}
+
+.subheader-text{
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px 0px;
+}
+
+.additional-text{
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* ABOUT ME STYLE */
+.about-me-page .left-section{
+  color: var(--color1);
+  padding: 10% 0;
+}
+
+.about-me-page .right-section{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-me-page .right-section img{
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  left: 20%;
+  top: 25%;
+}
+
+/* SKILL STYLE */
+.skills-page{
+  background-color: var(--color1);
+  /* height: 900px; */
+  position: relative;
+}
+
+.skills-page::before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 130%;
+  left: 50%;
+  top: -30%;
+  background-image: url('../images/segitiga.png');
+  background-repeat: no-repeat;
+  background-size: 75% 100%;
+  transform: scaleX(-1);
+}
+
+.skills-page .header-text{
+  color: white;
+}
+
+.skill-item-list{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+  border-radius: 100%;
+  position: relative;
+}
+
+.skill-item-list img{
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+/* GET IN TOUCH STYLE */
+.get-in-touch-page{
+  background-color: var(--color3);
+}
+
+.get-in-touch-page .header-text{
+  color: white;
+}
+
+.get-in-touch-page .background-text{
+  color: #ff7c40;
+}
+
+.background-text{
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: 1rem;
+}
+
+/* sm: phone - landscape */
+@media (min-width: 576px) {
+  /* HELLO STYLE */
+  /* ABOUT ME STYLE */
+  /* SKILL STYLE */
+  /* GET IN TOUCH STYLE */
+}
+
+/* md: tablet */
+@media (min-width: 768px) {
+  /* HELLO STYLE */
+  .header-text{
+    font-size: 50px;
+    padding: 10px 0px;
+  }
+  
+  .subheader-text{
+    font-size: 35px;
+    padding: 5px 0px;
+  }
+  
+  .additional-text{
+    font-size: 20px;
+  }
+  
+  /* ABOUT ME STYLE */
+
+  /* SKILL STYLE */
+  .skill-item-list{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  /* GET IN TOUCH STYLE */
+  .background-text{
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: 4rem;
+  }
+}
+
+/* lg: desktop */
+@media (min-width: 992px) {
+  /* HELLO STYLE */
+  .hello-page-background{
+    height: 980px;
+  }
+  .hello-page-section{
+    flex-direction: row;
+  }
+  .hello-page-image{
+    width: 400px;
+    height: 400px;
+  }
+  .background-text{
+    font-size: 8rem;
+    letter-spacing: 6rem;
+  }
+  .hello-page-image img{
+    width: 375px;
+  }
+
+  /* ABOUT ME STYLE */
+  .about-me-page{
+    background-image: linear-gradient(to right, white 50%, var(--color1) 50%);
+  }
+  .about-me-page .left-section{
+    padding: 25% 0;
+  }
+  .about-me-page .right-section img{
+    position: absolute;
+    width: 350px;
+    height: auto;
+    left: 20%;
+    top: 25%;
+  }
+
+  /* SKILL STYLE */
+  .skill-item-list{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  /* GET IN TOUCH STYLE */
+}
+
+/* xl: wide */
+@media (min-width: 1200px) {
+  /* HELLO STYLE */
+  .hello-page-image{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 15%;
+    top: 25%;
+  }
+  .hello-page-image img{
+    width: 465px;
+  }
+  /* ABOUT ME STYLE */
+  /* SKILL STYLE */
+  /* GET IN TOUCH STYLE */
+  .background-text{
+    font-size: 10rem;
+    line-height: 10rem;
+    letter-spacing: 8rem;
+  }
+}
+
+/* super wide */
+@media (min-width: 1440px) {
+  /* HELLO STYLE */
+  /* ABOUT ME STYLE */
+  /* SKILL STYLE */
+  /* GET IN TOUCH STYLE */
+}
